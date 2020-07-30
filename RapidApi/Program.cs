@@ -88,7 +88,7 @@ namespace ODataCLI
             //{
 
             //    //string path = System.IO.Path.GetDirectoryName(@"C:\Temp\") + "\\Get-EventLog.ps1";
-            //    string path = @"ODataCLI\deploy.ps1";
+            //    string path = @"RapidApi\deploy.ps1";
 
             //    if (!string.IsNullOrEmpty(path))
             //    {
@@ -106,8 +106,8 @@ namespace ODataCLI
             //    }
             //}
 
-            var args = $"--subscription {subscriptionId} --projectFilePath {projectZipPath} --parametersFilePath {parametersJsonPath} --resourceGroupName rg{appServiceName} --deploymentName dpl_{appServiceName} --templateFilePath ODataCLI\\azuredeploy.json";
-            Process.ExecuteAsync("powershell", $" -ExecutionPolicy RemoteSigned -File \"ODataCLI\\deploy.ps1\" {args}", Environment.CurrentDirectory, stdOut =>
+            var args = $"--subscription {subscriptionId} --projectFilePath {projectZipPath} --parametersFilePath {parametersJsonPath} --resourceGroupName rg{appServiceName} --deploymentName dpl_{appServiceName} --templateFilePath RapidApi\\azuredeploy.json";
+            Process.ExecuteAsync("powershell", $" -ExecutionPolicy RemoteSigned -File \"RapidApi\\deploy.ps1\" {args}", Environment.CurrentDirectory, stdOut =>
             {
                 Console.WriteLine(stdOut);
             }, stdErr => {

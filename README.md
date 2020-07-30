@@ -7,7 +7,7 @@ The cli creates a fully functional project that you can deploy on azure to test 
 ## Prerequisites
 1. [Dotnet CLI and Dotnet 3.1 sdk](https://docs.microsoft.com/en-us/dotnet/core/sdk)
 2. [Azure CLI ](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-3. Azure ARM powershell module `Install-Module -Name AzureRM.profile -RequiredVersion 5.8.2`
+3. Azure ARM powershell module `Install-Module -Name AzureRM.profile -RequiredVersion 5.8.2` and `Install-Module  AzureRM`
 
 
 ## How to run.
